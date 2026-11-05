@@ -168,6 +168,16 @@ html.js .logo-fig.rv-img.is-in{clip-path:inset(0)}
 .plan-sub .desc{margin:32px 0 0;font-size:15px;line-height:2.1;color:var(--ink2);max-width:24em}
 .plan-sub .note{margin:56px 0 0;padding-top:24px;border-top:1px solid var(--line);font-size:13px;line-height:1.9;color:var(--mute)}
 .plan .cta-row{margin-top:48px}
+.plan-sub .term{margin:18px 0 0;font-size:13px;letter-spacing:.12em;color:var(--ink2)}
+.plan-sub .incl{grid-template-columns:minmax(0,1fr);margin-top:32px}
+.terms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(40px,6vw,96px);margin-top:clamp(80px,9vw,140px)}
+.term-box{border-top:1px solid var(--line);padding-top:36px}
+.term-box .en{margin:0 0 14px;font-family:var(--latin);font-size:11.5px;letter-spacing:.24em;color:var(--mute)}
+.term-box h3{margin:0 0 20px;font-family:var(--serif);font-weight:500;font-size:clamp(18px,1.7vw,22px);letter-spacing:.04em}
+.term-box p{margin:0 0 1em;font-size:14.5px;line-height:2;color:var(--ink2)}.term-box p:last-child{margin:0}
+.term-box ul{margin:0 0 1em;padding:0;list-style:none}
+.term-box li{display:flex;gap:14px;align-items:baseline;font-size:14.5px;line-height:2;color:var(--ink2)}
+.term-box li::before{content:"";flex:0 0 auto;width:5px;height:5px;border-radius:50%;background:var(--blue);transform:translateY(-3px)}
 
 /* flow */
 .flow{background:var(--mist)}
@@ -341,6 +351,7 @@ html.js .label.rv.is-in::after{transform:scaleX(1)}
  .step{display:grid;grid-template-columns:56px minmax(0,1fr);padding:26px 0;border-top:0;border-bottom:1px solid rgba(20,21,23,.16)}
  .step .no{margin:0;padding-top:2px}
  .incl{grid-template-columns:minmax(0,1fr)}
+ .terms{grid-template-columns:minmax(0,1fr);gap:48px;margin-top:72px}
  .plan .cta-row .pill,.contact .cta-col,.contact .cta-col .pill{width:100%}
  .plan .cta-row .pill,.contact .cta-col .pill{justify-content:space-between}
  .contact-media{width:100%;opacity:.28;-webkit-mask-image:linear-gradient(180deg,transparent,#000 70%);mask-image:linear-gradient(180deg,transparent,#000 70%)}
@@ -443,16 +454,22 @@ html.js .label.rv.is-in::after{transform:scaleX(1)}
 <div class="price-grid">
 <div class="plan plan-main rv">
 <p class="tag">WEB SITE</p>
-<p class="amt"><span class="num">150,000</span><span class="yen">円〜</span></p>
+<p class="amt"><span class="num">150,000</span><span class="yen">円〜（税込）</span></p>
 <ul class="incl"><li>ヒアリング</li><li>企画・構成</li><li>オリジナルデザイン</li><li>スマートフォン対応</li><li>文章構成サポート</li><li>基本SEO設定</li><li>公開設定</li><li>修正5回まで</li></ul>
 <div class="cta-row rv-cta"><a href="https://lin.ee/8fiyjLZ" target="_blank" rel="noopener noreferrer" class="pill"><span class="pill-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4C7 4 3 7.2 3 11.2c0 2.4 1.5 4.6 3.8 5.9l-.6 2.9 3.2-1.9c.8.2 1.7.3 2.6.3 5 0 9-3.2 9-7.2S17 4 12 4Z" fill="currentColor"/></svg></span><span class="pill-tx">制作について相談する</span><svg class="arw" width="22" height="12" viewBox="0 0 22 12" fill="none" aria-hidden="true"><path d="M0 6h20M15 1l5 5-5 5" stroke="currentColor" stroke-width="1.3"/></svg></a></div>
 </div>
 <div class="plan plan-sub rv">
 <p class="tag">MAINTENANCE</p>
-<p class="amt"><span class="num">8,800</span><span class="yen">円〜 / 月</span></p>
+<p class="amt"><span class="num">8,800</span><span class="yen">円（税込）/ 月</span></p>
+<p class="term">最低契約期間 6ヶ月</p>
 <p class="desc">公開後の軽微な文章・画像の変更など、サイトの運用をサポートします。</p>
+<ul class="incl"><li>ドメイン・サーバー維持費込み</li><li>ドメイン更新・管理</li><li>サーバー管理</li><li>軽微な修正（月2回まで）</li><li>不具合対応（契約範囲内）</li></ul>
 <p class="note">※内容・ページ数・必要な機能によって制作料金は異なります。</p>
 </div>
+</div>
+<div class="terms">
+<div class="term-box rv"><p class="en">WITHOUT MAINTENANCE</p><h3>保守プランに加入しない場合</h3><p>保守プランへの加入は任意です。加入されない場合も、ホームページの制作・公開まではELLAが対応いたします。</p><ul><li>ドメイン・サーバーはお客様名義でご契約（初期設定はELLAがサポート）</li><li>公開後の維持費・更新費用はお客様負担</li><li>管理・更新作業はお客様ご自身で対応</li><li>公開後の修正・不具合対応は別途お見積もり</li></ul></div>
+<div class="term-box rv"><p class="en">CANCELLATION</p><h3>解約について</h3><p>保守プランは最低6ヶ月間のご契約となります。</p><p>解約後はドメイン・サーバーの管理をお客様へ引き継ぎます。移管が必要な場合は別途ご案内します。</p></div>
 </div>
 </div>
 </section>
@@ -468,7 +485,7 @@ html.js .label.rv.is-in::after{transform:scaleX(1)}
 <section class="sec faqs" id="faq">
 <div class="wrap faq-grid">
 <div><p class="label rv"><i>05</i>FAQ</p><h2 class="h-latin rv-h">FAQ</h2><p class="sub rv" style="margin:28px 0 0;font-family:var(--serif);font-size:18px;letter-spacing:.1em;color:var(--ink2)">よくあるご質問</p></div>
-<div class="faq-list"><details class="faq rv"><summary><span class="q">Q</span><span class="qt">ホームページについて何も分からなくても大丈夫ですか？</span><span class="ic" aria-hidden="true"></span></summary><div class="ans"><span class="a">A</span><p>大丈夫です。専門用語はできるだけ使わずにご説明します。「何を載せればいいか分からない」という段階から、一緒に整理していきます。</p></div></details><details class="faq rv"><summary><span class="q">Q</span><span class="qt">文章や写真が用意できていません。</span><span class="ic" aria-hidden="true"></span></summary><div class="ans"><span class="a">A</span><p>ヒアリングをもとに、載せる内容の整理や文章の構成づくりからお手伝いします。写真の用意の仕方についても、お気軽にご相談ください。</p></div></details><details class="faq rv"><summary><span class="q">Q</span><span class="qt">スマートフォンにも対応していますか？</span><span class="ic" aria-hidden="true"></span></summary><div class="ans"><span class="a">A</span><p>はい。すべてのサイトを、スマートフォンでも見やすい形で制作します。スマートフォン対応は制作料金に含まれています。</p></div></details><details class="faq rv"><summary><span class="q">Q</span><span class="qt">公開後も修正できますか？</span><span class="ic" aria-hidden="true"></span></summary><div class="ans"><span class="a">A</span><p>はい。月額の保守プラン（8,800円〜）で、文章や画像の変更など公開後の更新もサポートします。</p></div></details><details class="faq rv"><summary><span class="q">Q</span><span class="qt">制作期間はどのくらいですか？</span><span class="ic" aria-hidden="true"></span></summary><div class="ans"><span class="a">A</span><p>制作期間は、内容やページ数などの規模によって異なります。詳しくはお気軽にお問い合わせください。ヒアリングの際に、ご希望のスケジュールも一緒に相談しながら決めていきます。</p></div></details></div>
+<div class="faq-list"><details class="faq rv"><summary><span class="q">Q</span><span class="qt">ホームページについて何も分からなくても大丈夫ですか？</span><span class="ic" aria-hidden="true"></span></summary><div class="ans"><span class="a">A</span><p>大丈夫です。専門用語はできるだけ使わずにご説明します。「何を載せればいいか分からない」という段階から、一緒に整理していきます。</p></div></details><details class="faq rv"><summary><span class="q">Q</span><span class="qt">文章や写真が用意できていません。</span><span class="ic" aria-hidden="true"></span></summary><div class="ans"><span class="a">A</span><p>ヒアリングをもとに、載せる内容の整理や文章の構成づくりからお手伝いします。写真の用意の仕方についても、お気軽にご相談ください。</p></div></details><details class="faq rv"><summary><span class="q">Q</span><span class="qt">スマートフォンにも対応していますか？</span><span class="ic" aria-hidden="true"></span></summary><div class="ans"><span class="a">A</span><p>はい。すべてのサイトを、スマートフォンでも見やすい形で制作します。スマートフォン対応は制作料金に含まれています。</p></div></details><details class="faq rv"><summary><span class="q">Q</span><span class="qt">公開後も修正できますか？</span><span class="ic" aria-hidden="true"></span></summary><div class="ans"><span class="a">A</span><p>はい。月額の保守プラン（8,800円・税込）で、文章や画像の変更など公開後の更新もサポートします。</p></div></details><details class="faq rv"><summary><span class="q">Q</span><span class="qt">制作期間はどのくらいですか？</span><span class="ic" aria-hidden="true"></span></summary><div class="ans"><span class="a">A</span><p>制作期間は、内容やページ数などの規模によって異なります。詳しくはお気軽にお問い合わせください。ヒアリングの際に、ご希望のスケジュールも一緒に相談しながら決めていきます。</p></div></details></div>
 </div>
 </section>
 
