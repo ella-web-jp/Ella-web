@@ -135,6 +135,19 @@ html.js .logo-fig.rv-img.is-in{clip-path:inset(0)}
 .figure .strip-img{height:clamp(260px,34vw,520px)}
 .prep{margin-top:clamp(100px,12vw,180px)}
 .prep-foot{margin-top:clamp(32px,4vw,48px)}
+/* marketing */
+.mkt{background:var(--mist)}
+.mkt-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(40px,7vw,120px);align-items:start}
+.mkt-title{margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(26px,2.9vw,42px);line-height:1.6;letter-spacing:.05em;text-wrap:balance}
+.mkt-title em{font-style:normal;color:var(--blue);white-space:nowrap}
+.mkt-body{font-size:15.5px;line-height:2.15;color:var(--ink2);letter-spacing:.03em}
+.mkt-body p{margin:0 0 1.4em}.mkt-body p:last-child{margin:0}
+.mkt-quote{margin:0 0 1.4em;padding:4px 0 4px 22px;border-left:1px solid var(--blue);font-family:var(--serif);font-weight:500;font-size:clamp(17px,1.5vw,21px);line-height:1.8;color:var(--ink)}
+.mkt-body strong{font-weight:500;color:var(--ink)}
+.mkt .features{margin-top:clamp(72px,8vw,120px)}
+.mkt .feat{border-bottom-color:rgba(20,21,23,.14)}
+.mkt-close{margin-top:clamp(56px,6vw,88px);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:28px 48px}
+.mkt-close p{margin:0;max-width:34em;font-family:var(--serif);font-weight:500;font-size:clamp(17px,1.5vw,21px);line-height:1.9;letter-spacing:.03em}
 /* worries */
 .worries{background:var(--paper)}
 .wr-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(40px,7vw,120px);align-items:start}
@@ -206,6 +219,11 @@ html.js .logo-fig.rv-img.is-in{clip-path:inset(0)}
 .incl{list-style:none;margin:48px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px}
 .incl li{display:flex;align-items:center;gap:14px;padding:16px 0;border-bottom:1px solid var(--line);font-size:15px;letter-spacing:.04em}
 .incl li::before{content:"";flex:0 0 auto;width:5px;height:5px;border-radius:50%;background:var(--blue)}
+.incl li.incl-wide{grid-column:1 / -1;display:grid;grid-template-columns:5px minmax(0,1fr);column-gap:14px;align-items:baseline;padding:20px 0 22px}
+.incl li.incl-wide::before{transform:translateY(-3px)}
+.incl-wide .iw-t{margin:0;font-size:15px;font-weight:500;letter-spacing:.04em}
+.incl-wide .iw-d{margin:10px 0 0;font-size:14px;line-height:2;letter-spacing:.02em;color:var(--ink2)}
+.incl-wide .iw-n{margin:8px 0 0;font-size:12.5px;line-height:1.9;color:var(--mute)}
 .plan-sub .desc{margin:32px 0 0;font-size:15px;line-height:2.1;color:var(--ink2);max-width:24em}
 .plan-sub .note{margin:56px 0 0;padding-top:24px;border-top:1px solid var(--line);font-size:13px;line-height:1.9;color:var(--mute)}
 .plan .cta-row{margin-top:48px}
@@ -402,6 +420,10 @@ html.js .label.rv.is-in::after{transform:scaleX(1)}
  .wc-detail div{grid-template-columns:minmax(0,1fr);gap:2px;padding:10px 0}
  .wc-detail dd{font-size:13px;line-height:1.8}
  .wr-list li{padding:16px 0}
+ .mkt-grid{grid-template-columns:minmax(0,1fr);gap:28px}
+ .mkt-body{font-size:15px;line-height:2.05}
+ .mkt-close .rv-cta{width:100%}
+ .mkt-close .pill{width:100%;justify-content:space-between}
  .hero-points{margin-top:18px;gap:6px}
  .hero-points li{font-size:12px;padding:6px 12px}
  .wc{--cw:min(62vw,300px);--gap:.96}
@@ -475,6 +497,18 @@ html.js .label.rv.is-in::after{transform:scaleX(1)}
 </div>
 </section>
 
+<section class="sec mkt" id="marketing">
+<div class="wrap">
+<p class="label rv">Marketing</p>
+<div class="mkt-grid">
+<h2 class="mkt-title rv">AIで作れる時代だからこそ、必要なのは<em>「マーケティング設計」</em>です。</h2>
+<div class="mkt-body rv"><p>AIによって、ホームページを作るハードルは大きく下がりました。簡単なものであれば、誰でも作れる時代です。</p><p>ただ、きれいなホームページを作ることと、問い合わせにつながるホームページを作ることは別のことです。</p><p class="mkt-quote">お客様が見ているのは、「この人に相談すれば、自分の悩みを解決してくれそうか」という点です。</p><p>そして多くのお客様は、何社かを見比べています。ホームページの役割は、ただきれいに見せることではなく、比較されたときに<strong>選ばれる理由を伝えること</strong>です。</p><p>ELLA WEBでは、文章を作るだけで終わらせず、自社の強み、競合との違い、お客様が求めている情報を整理したうえで、<strong>誰に、何を、どの順番で伝えるか</strong>を設計します。</p><p>文章や構成が決まっていなくても大丈夫です。事業の内容や想いをお聞きしながら、問い合わせにつながる形に整えていきます。</p></div>
+</div>
+<div class="features"><div class="feat rv"><span class="no">01</span><div><p class="en">SELF ANALYSIS</p><h3>自社分析</h3></div><p class="t">自分では当たり前だと思っている強みも、お客様から見ると選ばれる理由になることがあります。ヒアリングを通して、サービスの魅力や選ばれている理由を言葉にします。</p></div><div class="feat rv"><span class="no">02</span><div><p class="en">COMPETITOR RESEARCH</p><h3>競合リサーチ</h3></div><p class="t">多くのお客様は、他社と見比べてから相談先を決めます。競合が何を打ち出しているかを確認し、同じ見せ方ではなく、自社が選ばれる立ち位置を整理します。</p></div><div class="feat rv"><span class="no">03</span><div><p class="en">SEARCH NEEDS</p><h3>検索ニーズの確認</h3></div><p class="t">どんな言葉で探されているのか、どんな悩みを持っているのかを踏まえて、必要な情報をホームページに反映します。</p></div></div>
+<div class="mkt-close rv"><p>AIで作れる時代だからこそ、ただ作るだけでは差がつきません。「誰に、何を、どう伝えれば選ばれるのか」から一緒に考えたい方は、まずはLINEでご相談ください。</p><div class="rv-cta"><a href="https://lin.ee/8fiyjLZ" target="_blank" rel="noopener noreferrer" class="pill"><span class="pill-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4C7 4 3 7.2 3 11.2c0 2.4 1.5 4.6 3.8 5.9l-.6 2.9 3.2-1.9c.8.2 1.7.3 2.6.3 5 0 9-3.2 9-7.2S17 4 12 4Z" fill="currentColor"/></svg></span><span class="pill-tx">LINEで無料相談する</span><svg class="arw" width="22" height="12" viewBox="0 0 22 12" fill="none" aria-hidden="true"><path d="M0 6h20M15 1l5 5-5 5" stroke="currentColor" stroke-width="1.3"/></svg></a></div></div>
+</div>
+</section>
+
 <section class="sec about" id="about">
 <div class="wrap">
 <p class="label rv"><i>01</i>About</p>
@@ -536,7 +570,7 @@ html.js .label.rv.is-in::after{transform:scaleX(1)}
 <p class="tag">WEB SITE</p>
 <p class="amt"><span class="num">150,000</span><span class="yen">円〜（税込）</span></p>
 <p class="incl-h">基本料金に含まれる内容</p>
-<ul class="incl"><li>ヒアリング</li><li>企画・構成</li><li>オリジナルデザイン</li><li>スマートフォン対応</li><li>文章構成サポート</li><li>基本SEO設定</li><li>公開設定</li><li>修正5回まで</li></ul>
+<ul class="incl"><li class="incl-wide"><div><p class="iw-t">制作前のヒアリング・リサーチ</p><p class="iw-d">お話を伺い、事業の強みや届けたいお客様を整理します。同業他社のサイトや、お客様が検索する言葉を確認し、ページ構成や文章、問い合わせまでの流れに反映します。</p><p class="iw-n">※基本料金で行うのは、サイトの構成や文章を決めるための調査までです。</p></div></li><li>企画・構成</li><li>オリジナルデザイン</li><li>スマートフォン対応</li><li>文章構成サポート</li><li>基本SEO設定</li><li>公開設定</li><li>修正5回まで</li></ul>
 <div class="cta-row rv-cta"><a href="https://lin.ee/8fiyjLZ" target="_blank" rel="noopener noreferrer" class="pill"><span class="pill-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4C7 4 3 7.2 3 11.2c0 2.4 1.5 4.6 3.8 5.9l-.6 2.9 3.2-1.9c.8.2 1.7.3 2.6.3 5 0 9-3.2 9-7.2S17 4 12 4Z" fill="currentColor"/></svg></span><span class="pill-tx">LINEで相談・見積もりする</span><svg class="arw" width="22" height="12" viewBox="0 0 22 12" fill="none" aria-hidden="true"><path d="M0 6h20M15 1l5 5-5 5" stroke="currentColor" stroke-width="1.3"/></svg></a></div>
 </div>
 <div class="plan plan-sub rv">
